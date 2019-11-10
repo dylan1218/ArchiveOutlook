@@ -4,7 +4,7 @@ from win32api import *
 from win32com.client import *
 import os
 
-base
+
 
 outlook = win32com.client.Dispatch("Outlook.Application").GetNamespace("MAPI") #gets the folder namespace for the current outlook instance
 folder = outlook.Folders["YOUR BASE FOLDER"]  #gets the folder for the given string. This represents the BASE folder you want archived -- all subfolder within will be archived as well
